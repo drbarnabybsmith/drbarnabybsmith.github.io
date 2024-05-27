@@ -10,7 +10,7 @@ title: "Patient Registration Form"
     <div class="content-narrow">
         <div class="container pt-2">
 
-            <form action="https://staticcontact.com/send" method="post" class="card bg-white black">
+            <form id="registrationform" action="https://staticcontact.com/send" method="post" class="card bg-white black">
                 <input type="hidden" name="access_token" value="4d743092-fd01-40e3-b20f-5a8458c31f3d" />
                 <input type="hidden" name="subject" value="test" />
                 <input type="hidden" name="bot_buster" value="true" />
@@ -92,11 +92,19 @@ title: "Patient Registration Form"
                 </div>
 
 
-                <button type="submit">Send <svg class="icon">
+                <button class="g-recaptcha" data-sitekey="6Lea-OkpAAAAAEwZpD1PXwG4Q6gO_k-SXIOw3cem" data-callback='onSubmit'
+                        data-action='submit'>Send <svg class="icon">
                         <use href="/imgs/icons.svg#arrow_right"></use>
                     </svg></button>
             </form>
 
         </div>
     </div>
-    </div>
+</section>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+        document.getElementById("registrationform").submit();
+    }
+</script>

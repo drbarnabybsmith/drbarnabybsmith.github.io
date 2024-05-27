@@ -1,0 +1,105 @@
+<section class="content bg-grey-gradient animated fadeIn faster pt-8">
+    <div class="content">
+        <div class="container pb-0">
+            <h1>Patient Registration Form</h1>
+        </div>
+    </div>
+    <div class="content-narrow">
+        <div class="container pt-2">
+
+            <form action="https://staticcontact.com/send" method="post" novalidate="novalidate"
+                class="card bg-white black">
+                <input type="hidden" name="access_token" value="4d743092-fd01-40e3-b20f-5a8458c31f3d" />
+                <input type="hidden" name="subject" value="test" />
+                <input type="hidden" name="bot_buster" value="true" />
+
+                <div class="grid two mb-1">
+                    <label> Family Name <span class="red">*</span>
+                        <input type="text" name="family-name" value="" /></label>
+                    <label> Given Name <span class="red">*</span>
+                        <input type="text" name="given-name" value="" size="40" aria-required="true"
+                            aria-invalid="false"> </label>
+                </div>
+                <div class="grid two mb-1">
+                    <label> Preferred Name
+                        <input type="text" name="preferred-name" value="" size="40"
+                            class="wpcf7-form-control wpcf7-text" aria-invalid="false"> </label>
+                    <label> Name of Guardian (if dependant/minor)
+                        <input type="text" name="guardian" value="" size="40" class="wpcf7-form-control wpcf7-text"
+                            aria-invalid="false"> </label>
+
+                </div>
+                <label> Address <span class="red">*</span>
+                    <textarea type="text" name="address" value="" size="40" aria-required="true" aria-invalid="false"
+                        class="mb-1"></textarea> </label>
+
+                <div class="grid two mb-1">
+                    <label>Phone number <span class="red">*</span>
+                        <input type="text" name="telephone" value="" size="40" aria-required="true"
+                            aria-invalid="false"> </label>
+                    <label>Email Address <span class="red">*</span>
+                        <input type="email" name="email" value="" size="40" aria-required="true"
+                            aria-invalid="false"></label>
+                </div>
+                <div class="grid two mb-1">
+                    <label> Date of birth <span class="red">*</span>
+                        <input type="date" name="Dateofbirth" value="" aria-required="true" aria-invalid="false">
+                    </label>
+                    <label>Occupation
+                        <input type="text" name="occupation" value="" size="40" aria-invalid="false"></label>
+                </div>
+                <div class="grid two mb-1">
+                    <label>Family Doctor
+                        <input type="text" name="family-doctor" value="" size="40" aria-invalid="false"></label>
+
+                    <label>Medical Insurer
+                        <input type="text" name="medical-insurer" value="" size="40" aria-invalid="false"></label>
+                </div>
+                <div class="grid two mb-1">
+                    <label>If Southern Cross: SC Member Number
+                        <input type="text" name="southern-cross" value="" size="40" aria-invalid="false"></label>
+                    <label>Regular Medications
+                        <input type="text" name="regular-medications" value="" size="40" aria-invalid="false"></label>
+                </div>
+                <div class="grid two mb-1">
+                    <label>Medication Allergies
+                        <input type="text" name="medication-allergies" value="" size="40" aria-invalid="false"></label>
+                    <label>Other Medical Conditions
+                        <input type="text" name="medical-conditions" value="" size="40" aria-invalid="false"></label>
+                </div>
+
+                <div class="mb-2">
+                    <label>Select Location</label>
+                    <div class="row radio-buttons">
+                        <input type="radio" name="location" id="tsc" value="Tauranga Specialist Centre"
+                            checked="checked">
+                        <label for="tsc">Tauranga Specialist Centre</label>
+                        <input type="radio" name="location" id="ebsc" value="East Bay Specialist Centre">
+                        <label for="ebsc">East Bay Specialist Centre</label>
+                    </div>
+                </div>
+
+                <div class="card bg-blue white mb-2">
+                    <div class="row checkbox-buttons">
+                        <div><input type="checkbox" name="authorise" id="authorise" value="Yes" required></div>
+                        <label for="authorise">I authorize Dr Barnaby Smith
+                            to obtain laboratory results and additional medical Information from
+                            my GP, the laboratory or other specialist, which may be required to complete your
+                            consultation.</label>
+                    </div>
+
+                    <div class="row checkbox-buttons">
+                        <div><input type="checkbox" name="tncs" id="tncs" value="true" required></div>
+                        <label for="tncs">I accept the terms of service</label>
+                    </div>
+                </div>
+
+
+                <button type="submit">Send <svg class="icon">
+                        <use href="/imgs/icons.svg#arrow_right"></use>
+                    </svg></button>
+            </form>
+
+        </div>
+    </div>
+    </div>

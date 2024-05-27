@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', '');
+    </script>
+
+    <title> | Dr Barnaby Smith</title>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand">
+    <meta name="keywords" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty">
+
+    
+    <meta property="og:url" content="http://localhost:1313/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr Barnaby Smith" />
+    <meta property="og:description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand" />
+    <meta property="og:image" content="http://localhost:1313//imgs/social-a-16x9.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="http://localhost:1313/" />
+    <meta name="twitter:title" content="Dr Barnaby Smith" />
+    <meta name="twitter:description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand" />
+    <meta name="twitter:image" content="http://localhost:1313//imgs/social-a-16x9.png" />
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/styles.css" media="screen">
+    
+
+    <link rel="icon" type="image/png" href="http://localhost:1313/imgs/favicon-32x32.png"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:1313/imgs/favicon-16x16.png"
+        sizes="16x16">
+
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <script src="/js/scripts.js"></script>
+</head>
+
+<body><header id="page-header" class="right animated fadeIn page-at-top"
+    :class="$store.menuTrigger.checked ? 'menu-checked' : ''" x-data="">
+
+    <div>
+        
+        <div id="logo" class="animated fadeIn">
+            <a href="/" @click="$store.menuTrigger.setOff()"><img src="/imgs/logo.png" alt="Dr Barnaby Smith" /></a>
+        </div>
+
+        <div id="main-menu" class="animated fadeIn">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/contact" class="btn">Contact
+                            <svg class="icon">
+                                <use href="/imgs/icons.svg#bubbles"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/#procedures">Procedures</a>
+                    </li>
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/procedures/weight-loss-surgery">Weight Loss Surgery</a>
+                    </li>
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/patient-registration-form">Registration</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </nav>
+
+            
+            <nav role="navigation" class="phone-menu">
+                <div id="menuToggle">
+                    <input type="checkbox" id="menu-trigger" x-model="$store.menuTrigger.checked" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu" :class="$store.menuTrigger.checked ? 'fadeIn' : 'fadeOut'">
+                        <li class="animated" :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a href="/contact" class="btn white">Contact
+                                <svg class="icon">
+                                    <use href="/imgs/icons.svg#bubbles"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/#procedures"
+                                @click="$store.menuTrigger.checked=false">Procedures</a>
+                        </li>
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/procedures/weight-loss-surgery"
+                                @click="$store.menuTrigger.checked=false">Weight Loss Surgery</a>
+                        </li>
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/patient-registration-form"
+                                @click="$store.menuTrigger.checked=false">Registration</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header><div id="animated fadeIn faster">
+
+<section class="content bg-grey-gradient animated fadeIn faster pt-8">
+    <div class="content">
+        <div class="container pb-0">
+            <h1>Bariatric (Weight Loss) Surgery</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+
+            <div class="grid two procedure" style="--columns: 250px 1fr">
+                <div>
+
+                    <div class="card bg-grey-dark white">
+                        <ul class="grid one gap1 middle no-style procedure-menu mb-0">
+                            <li>
+                                <a href="/procedures/weight-loss-surgery" >How
+                                    it
+                                    works
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gastric-sleeve" class="selected" >Gastric Sleeve
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-choosing-op" >Choosing op
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-omega-loop" >Omega Loop
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-patient-journey" >Patient journey
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-preparing-for-surgery" >Preparing for
+                                    surgery
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-optifast-diet-instructions" >Optifast diet instructions
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-operative" >Post operative
+                                    Vitamin and Element replacement
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-gastric" >Post Gastric
+                                    Bypass fluids and discharge plan
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-sleeve" >Post
+                                    Sleeve gastrectomy fluids and discharge plan
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-dietician-advice" >
+                                    Dietician Advice
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-after-recovery" >After recovery
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-operative-bloods" >
+                                    Post operative bloods
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gp-info" >GP info
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-cost" >Cost
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gastric-bypass" >Roux en Y Gastric Bypass
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-clinical-nurse-specialist" >Clinical Nurse Specialist
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Tabs -->
+                <div class="card bg-white black">
+                    <h2>Sleeve Gastrectomy</h2>
+
+                    <p>Sleeve gastrectomy is the removal of a large part of your stomach. This results in
+                        both metabolic and restrictive changes that result in weight loss and generally
+                        improvement in various comorbidities (such as Diabetes and Hypertension).</p>
+
+                    <p>A Sleeve Gastrectomy is a major laparoscopic operation and requires lifestyle
+                        changes to maximise the results for you.</p>
+
+                    <h3>How does the Sleeve Gastrectomy work?</h3>
+
+                    <h4>Restrictive</h4>
+                    <p>The majority of the stomach is removed. Approximately 100ml 'sleeve' of the
+                        stomach remains (&lt;15% of the stomach). This then results in less food being
+                        consumed and with 'early satiety', this is the sensation of feeling full and satisfied
+                        after eating smaller volumes and thus less calories consumed.</p>
+
+                    <h4>Other factors</h4>
+                    <p>Metabolic and hormonal changes occur after the operation. There are changes in the
+                        amount of hormones and signals sent from the remaining stomach to the body, that
+                        'turn down' your appetite and also creates "early satiety ". Your body also responds
+                        by controlling glucose and fats better within the bloodstream (less insulin resistance-
+                        which is the hallmark of type 2 Diabetes.</p>
+
+                    <h4>Lifestyle</h4>
+                    <p>Only with lifestyle changes can any Bariatric surgery be effective. These include
+                        regular exercise, healthy eating, stopping smoking and avoiding high-calorie foods.</p>
+
+                    <div class="grid two" style="--columns: 1fr 1fr">
+                        <img src="/imgs/procedures/weight_loss_surgery_2.png" alt="" />
+                        <img src="/imgs/procedures/weight_loss_surgery_3.png" alt="" />
+                    </div>
+
+                    <h4>Who benefits from a Sleeve Gastrectomy</h4>
+                    <p>People who are committed to lifestyle changes and psychologically prepared with a; </p>
+                    <ul>
+                        <li>BMI &gt;35</li>
+                        <li>BMI &gt;30 with comorbidites (Diabetes/ Obstructive Sleep Apnoea/ Joint
+                            disease)</li>
+                    </ul>
+
+                    <p>Who has attempted several months of weight loss without desired results and no
+                        contraindication to surgery (liver/kidney failure, critical heart disease
+                        The benefits of weight surgery are greatest in people under 65yrs. This is due to the
+                        reversibility of the comorbidities and risks of surgery. Patients with lower BMI (30-35)
+                        can be discussed on a case by case basis.</p>
+
+                    <p>Any Bariatric operation is a partnership between the Surgeon and the Patient</p>
+
+                    <h3>What are the benefits of the Sleeve Gastrectomy?</h3>
+                    <ul>
+                        <li>Weight loss of between 70-75% excess body weight</li>
+                        <li>Resolution of comorbidities</li>
+                        <li>Diabetes (approx 70-80%)</li>
+                        <li>High blood pressure</li>
+                        <li>Obstructive sleep apnoea</li>
+                        <li>Halt deterioration of weight related conditions</li>
+                        <li>A BMI &gt;40 is equivalent to smoking in shortening ones life expectancy</li>
+                    </ul>
+
+                    <h3>What are the contra-indications to a Sleeve Gastrectomy?</h3>
+                    <ul>
+                        <li>Moderate/Severe acid reflux ("Heartburn")</li>
+                        <li>If not prepared to undergo lifestyle and dietary changes</li>
+                        <li>Significant medical comorbidities (Cirrhosis of liver/ Heart failure etc…)</li>
+                    </ul>
+                    <h3>Preoperative cares</h3>
+                    <ul>
+                        <li>Continued dietary and lifestyle changes.</li>
+                        <li>Strongly recommended to stop smoking and reduce alcohol intake. Post
+                            operatively it is recommended to avoid alcohol completely for 6 months</li>
+                        <li>Stabilisation/optimisation of co-morbidities (Diabetes/ High blood pressure)
+                            2-3 weeks before surgery you commence the OPTIFAST diet, a very low-
+                            calorie diet (VLCD) that is &lt;800kcal per day that completely replaces your
+                            meals/ diet (Nutritionally complete).</li>
+                    </ul>
+                    <p>This achieves further weight loss and decreases the size of your liver improving
+                        surgical access, safer surgery and <strong>fewer complications</strong></p>
+
+                    <h3>Dietician Review</h3>
+                    <p>All patients will be assessed by our Dietician</p>
+                    <p>This is to:</p>
+                    <ul>
+                        <li>Optimise preoperative weight loss</li>
+                        <li>Education surrounding a healthy diet</li>
+                        <li>Prepare yourself for the dietary changes necessary after surgery</li>
+                    </ul>
+
+                    <h3>Psychologist Review</h3>
+                    <p>All patients will be assessed by our psychologist. This is routine and been shown to
+                        improve one 's understanding around the operation and the post-operative effects on
+                        your life.</p>
+
+                    <h3>Risks of surgery</h3>
+                    <ul>
+                        <li><strong>Death</strong> - very low; between 1-2/1000 patients</li>
+                        <li><strong>Bleeding</strong> - 1% chance of blood transfusion</li>
+                        <li><strong>Leak</strong> - 1%. From staple line. <strong>This is a serious
+                                complication.</strong> That may
+                            result in further surgery and prolonged hospital stay.</li>
+                        <li><strong>Conversion</strong> - &lt;1% risk of a large scar</li>
+                        <li><strong>Injury to bowel</strong> - &lt;1%. From the insertion of the laparoscopic ports</li>
+                        <li><strong>Vomiting</strong> - &lt;5%. This occasionally occurs from kinking/twisting of the
+                            stomach tube. Generally resolves within 4 weeks</li>
+                        <li><strong>Medical complications </strong>- DVT (clots in leg veins), Heart attacks, Skin
+                            infections, Stroke, Pancreatitis - all unlikely</li>
+                    </ul>
+
+                    <h3>Long term concerns</h3>
+                    <ul>
+                        <li><strong>Increased acid reflux symptoms</strong> - Association of increased reflux
+                            symptoms after Sleeve surgery (Approx 20%). Unclear cause</li>
+                        <li><strong>Smaller meals</strong> - Smaller stomach volume after surgery</li>
+                        <li><strong>Dehydration</strong> - Due to smaller volume fluid drunk</li>
+                        <li><strong>Excessive weight loss</strong> - slow sustained weight loss best</li>
+                        <li><strong>Nutritional Deficiencies</strong> - Multivitamins taken postoperatively may be
+                            required. Calcium and Iron are the most common deficiencies resulting in
+                            osteoporosis and anaemia respectively. These are generally mild.</li>
+                        <li><strong>Psychological</strong> - Depression, anxiety and adjustment disorders can occur in
+                            the longer term</li>
+                        <li><strong>Gallstones</strong> - Not infrequently stones develop following Sleeve surgery.
+                            Management is dictated by symptoms</li>
+                        <li><strong>Abdominal bloat/ vomiting</strong> - Due to various causes. Can be due to
+                            "dumping " of food into the small intestine, internal scars, or angulation of the
+                            sleeve. The Latter may require intervention (Surgery or Endoscopic dilation)</li>
+                        <li><strong>Hernia</strong> - Through surgical scars = "Port site " hernia. Internal hernias not
+                            seen
+                            in Sleeve Gastrectomy </li>
+
+                        <h3>Sleeve Gastrectomy summary</h3>
+
+                        <h4>Advantages</h4>
+                        <ul>
+                            <li>Rapid weight loss as hunger and satiety control well tolerated. Most near
+                                target weight by 1 year with maximal weight loss at 18 months</li>
+                            <li>The continuity of the gastrointestinal tract is preserved so that many of the
+                                nutritional complications seen with Bypasses are avoided.</li>
+                            <li>Recovery time is rapid with most patients returning to work in a week or two.
+                                No heavy lifting 4-6weeks</li>
+                        </ul>
+                        <h4>Disadvantages</h4>
+                        <ul>
+                            <li>Leaks from staple line can occur (1%), which would require hospitalisation
+                                and re-intervention.</li>
+                            <li>Possibly 5-10% of patients may require revisional surgery due to weight
+                                regain (at 5-10+ years).</li>
+                        </ul>
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    </div><footer class="grid layout" x-data="{ open: 0 }">
+    <div class="item-center container">
+
+        <div class="grid three" style="--columns: 1fr 1fr 2fr">
+            <div id="contact-us">
+                <h5 class="underline">Pages</h5>
+                <nav>
+                    <ul>
+                        
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/#procedures">Procedures</a>
+                        </li>
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/procedures/weight-loss-surgery">Weight Loss Surgery</a>
+                        </li>
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/patient-registration-form">Registration</a>
+                        </li>
+                        
+                        
+                        <li>&nbsp;</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h5 id="contact" class="underline">Contact</h5>
+                
+                
+
+                <div class="mb-4">
+                    <div>
+                        <h6>Hours:</h6>
+                        <p>6.00 am - 6.00 pm Weekdays</p>
+
+                        <h6>Phone:</h6>
+                        <p>
+                            <a href="tel:+6421988961" class="blue-dark">+64 (0) 21 988 961</a>
+                        </p>
+                        <a href="/contact" class="btn">Ask a question <svg class="icon">
+                                <use href="/imgs/icons.svg#bubbles"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>Clinics </h5>
+                <div class="grid two" style="--columns: 1fr 1fr">
+
+                    <div class="card bg-blue-dark white">
+                        <h4>Tauranga Specialist Centre</h4>
+                        <address class="pb-2">
+
+                            752 Cameron Rd<br />
+                            Tauranga 3110<br /><br />
+                            <h6>Phone:</h6>
+                            <a href="tel:+647545715548" class="white">+64 (754) 571 5548</a><br />
+                            <h6>Fax:</h6>
+                            +64 (754) 754 5549<br /><br />
+
+                        </address>
+                        <a @click="open=1" class="btn">Map <svg class="icon">
+                                <use href="/imgs/icons.svg#map_marker"></use>
+                            </svg></a>
+                    </div>
+
+                    <div class="card bg-blue-dark white">
+                        <h4>East Bay Specialist Centre</h4>
+                        <address class="pb-2">
+
+                            Pheonix House<br />
+                            Pyne St<br />
+                            Whakatane 3120<br /><br />
+                            <h6>Phone:</h6>
+                            <a href="tel:+647303072029" class="white">+64 (730) 307 2029</a><br />
+                            <h6>Fax:</h6>
+                            +64 (730) 308 9720<br />
+                        </address>
+                        <a @click="open=2" class="btn">Map
+                            <svg class="icon">
+                                <use href="/imgs/icons.svg#map_marker"></use>
+                            </svg></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div x-show="open==1" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+        <div class="map_wrapper">
+            <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
+                    <use href="/imgs/icons.svg#cross"></use>
+                </svg></button>
+
+            <div class="map">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18
+                &q=SKIN+Dermatology+Institute+752+Cameron+Road,+Tauranga+South,+Tauranga+3112">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div x-show="open==2" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+        <div class="map_wrapper">
+            <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
+                    <use href="/imgs/icons.svg#cross"></use>
+                </svg></button>
+
+            <div class="map">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18
+                &q=east+bay+specialist+centre">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="align-center copyright small p-2"> &copy; 2024 Dr Barnaby Smith. All
+    rights reserved.</div></body>
+
+</html>

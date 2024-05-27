@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', '');
+    </script>
+
+    <title> | Dr Barnaby Smith</title>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand">
+    <meta name="keywords" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty">
+
+    
+    <meta property="og:url" content="http://localhost:1313/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr Barnaby Smith" />
+    <meta property="og:description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand" />
+    <meta property="og:image" content="http://localhost:1313//imgs/social-a-16x9.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="http://localhost:1313/" />
+    <meta name="twitter:title" content="Dr Barnaby Smith" />
+    <meta name="twitter:description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand" />
+    <meta name="twitter:image" content="http://localhost:1313//imgs/social-a-16x9.png" />
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/styles.css" media="screen">
+    
+
+    <link rel="icon" type="image/png" href="http://localhost:1313/imgs/favicon-32x32.png"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:1313/imgs/favicon-16x16.png"
+        sizes="16x16">
+
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <script src="/js/scripts.js"></script>
+</head>
+
+<body><header id="page-header" class="right animated fadeIn page-at-top"
+    :class="$store.menuTrigger.checked ? 'menu-checked' : ''" x-data="">
+
+    <div>
+        
+        <div id="logo" class="animated fadeIn">
+            <a href="/" @click="$store.menuTrigger.setOff()"><img src="/imgs/logo.png" alt="Dr Barnaby Smith" /></a>
+        </div>
+
+        <div id="main-menu" class="animated fadeIn">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/contact" class="btn">Contact
+                            <svg class="icon">
+                                <use href="/imgs/icons.svg#bubbles"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/#procedures">Procedures</a>
+                    </li>
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/procedures/weight-loss-surgery">Weight Loss Surgery</a>
+                    </li>
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/patient-registration-form">Registration</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </nav>
+
+            
+            <nav role="navigation" class="phone-menu">
+                <div id="menuToggle">
+                    <input type="checkbox" id="menu-trigger" x-model="$store.menuTrigger.checked" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu" :class="$store.menuTrigger.checked ? 'fadeIn' : 'fadeOut'">
+                        <li class="animated" :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a href="/contact" class="btn white">Contact
+                                <svg class="icon">
+                                    <use href="/imgs/icons.svg#bubbles"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/#procedures"
+                                @click="$store.menuTrigger.checked=false">Procedures</a>
+                        </li>
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/procedures/weight-loss-surgery"
+                                @click="$store.menuTrigger.checked=false">Weight Loss Surgery</a>
+                        </li>
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/patient-registration-form"
+                                @click="$store.menuTrigger.checked=false">Registration</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header><div id="animated fadeIn faster">
+
+<section class="content bg-grey-gradient animated fadeIn faster pt-8">
+    <div class="content">
+        <div class="container pb-0">
+            <h1>Bariatric (Weight Loss) Surgery</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+
+            <div class="grid two procedure" style="--columns: 250px 1fr">
+                <div>
+
+                    <div class="card bg-grey-dark white">
+                        <ul class="grid one gap1 middle no-style procedure-menu mb-0">
+                            <li>
+                                <a href="/procedures/weight-loss-surgery" >How
+                                    it
+                                    works
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gastric-sleeve" >Gastric Sleeve
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-choosing-op" >Choosing op
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-omega-loop" >Omega Loop
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-patient-journey" >Patient journey
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-preparing-for-surgery" >Preparing for
+                                    surgery
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-optifast-diet-instructions" class="selected" >Optifast diet instructions
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-operative" >Post operative
+                                    Vitamin and Element replacement
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-gastric" >Post Gastric
+                                    Bypass fluids and discharge plan
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-sleeve" >Post
+                                    Sleeve gastrectomy fluids and discharge plan
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-dietician-advice" >
+                                    Dietician Advice
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-after-recovery" >After recovery
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-operative-bloods" >
+                                    Post operative bloods
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gp-info" >GP info
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-cost" >Cost
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gastric-bypass" >Roux en Y Gastric Bypass
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-clinical-nurse-specialist" >Clinical Nurse Specialist
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Tabs -->
+                <div>
+                    <div class="card bg-white black">
+                        <h2>Optifast Diet Instructions</h2>
+
+                        <p>
+                            You will have told you how long you need to follow this diet before surgery. This depends on
+                            your personal treatment plan.
+                        </p>
+
+                        <h3>How do I take Optifast?</h3>
+                        <p>Make sure you have 4 Optifast packets each day. Do not drink less than 4 Optifast a day as
+                            this can result in muscle loss and poor healing after surgery. Mix 1 packet with at least
+                            300 ml (11⁄4 cups) of cold water. You can add ice cubes if you like. Shake well or blend in
+                            a blender. Drink at least 2 litres (8 cups) of fluid each day including the Optifast
+                            amounts.</p>
+
+                        <h3>What else can I take with Optifast?</h3>
+
+                        <p>Drink sugar-free, calorie-free beverages that are non-carbonated, including:</p>
+                        <ul>
+                            <li>Water</li>
+                            <li>Decaf coffee or decaf tea (no milk or sugar added), artificial sweetener is okay</li>
+                            <li>Low-fat broth (up to 20 calories per serving is allowed)</li>
+                            <li>Sugar-free jelly</li>
+                        </ul>
+
+                        <p>You can also eat up to a total of 500 ml (2 cups) a day of the following vegetables while
+                            taking Optifast. These are the ONLY vegetables you can eat:</p>
+                        <ul>
+                            <li>Green peppers</li>
+                            <li>Broccoli</li>
+                            <li>Cauliflower</li>
+                            <li>Lettuce</li>
+                            <li>Spinach</li>
+                            <li>Celery</li>
+                            <li>Cabbage</li>
+                            <li>Cucumber</li>
+                        </ul>
+
+                        <p>You can use a small amount (1 tablespoon or 15 ml) of calorie-free dressing with your
+                            vegetables if you like. You cannot eat any other solid foods while you are taking Optifast.
+                        </p>
+
+                        <h3>Optifast Diet Instructions</h3>
+
+                        <h4>Can I add anything to change the flavour?</h4>
+                        <p>You may add any of the following to your Optifast to change the flavour:</p>
+                        <ul>
+                            <li>Decaf coffee (brewed or instant coffee crystals)</li>
+                            <li>Sugar-free syrups or flavour extracts such as mint, berry, maple or banana</li>
+                            <li>Zero-calorie drinks such as Crystal Light or Mio</li>
+                        </ul>
+
+                        <h4>What do I do if I have diabetes?</h4>
+                        <p>If may need help adjusting your diabetes medications while on Optifast</p>
+
+                        <h4>What if I have constipation or diarrhoea while taking Optifast?</h4>
+
+                        <p>Sometimes, people have constipation or diarrhoea while taking Optifast. This is mostly
+                            related to the low amount of fibre found in the product.</p>
+
+                        <p>If you have constipation, try increasing your liquids up to 3 litres (12 cups) each day. You
+                            can also try using a fibre supplement such as Benefibre or Metamucil capsules. Use the
+                            sugar-free versions of these products. Start with the lowest dose and follow the
+                            instructions on the label, up to the maximum daily dose. If you still have constipation, you
+                            can also use medications for constipation such as Colace, Senekot or milk of magnesia.</p>
+
+                        <p>
+                            If you have diarrhoea, it is still important to drink at least 2 litres (8 cups) of fluids
+                            daily. Using a fibre supplement such as Benefibre or Metamucil capsules can also help with
+                            diarrhoea. Use the sugar-free versions of these products. Start with the lowest dose and
+                            follow the instructions on the label, up to the maximum daily
+                            dose.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    </div><footer class="grid layout" x-data="{ open: 0 }">
+    <div class="item-center container">
+
+        <div class="grid three" style="--columns: 1fr 1fr 2fr">
+            <div id="contact-us">
+                <h5 class="underline">Pages</h5>
+                <nav>
+                    <ul>
+                        
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/#procedures">Procedures</a>
+                        </li>
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/procedures/weight-loss-surgery">Weight Loss Surgery</a>
+                        </li>
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/patient-registration-form">Registration</a>
+                        </li>
+                        
+                        
+                        <li>&nbsp;</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h5 id="contact" class="underline">Contact</h5>
+                
+                
+
+                <div class="mb-4">
+                    <div>
+                        <h6>Hours:</h6>
+                        <p>6.00 am - 6.00 pm Weekdays</p>
+
+                        <h6>Phone:</h6>
+                        <p>
+                            <a href="tel:+6421988961" class="blue-dark">+64 (0) 21 988 961</a>
+                        </p>
+                        <a href="/contact" class="btn">Ask a question <svg class="icon">
+                                <use href="/imgs/icons.svg#bubbles"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>Clinics </h5>
+                <div class="grid two" style="--columns: 1fr 1fr">
+
+                    <div class="card bg-blue-dark white">
+                        <h4>Tauranga Specialist Centre</h4>
+                        <address class="pb-2">
+
+                            752 Cameron Rd<br />
+                            Tauranga 3110<br /><br />
+                            <h6>Phone:</h6>
+                            <a href="tel:+647545715548" class="white">+64 (754) 571 5548</a><br />
+                            <h6>Fax:</h6>
+                            +64 (754) 754 5549<br /><br />
+
+                        </address>
+                        <a @click="open=1" class="btn">Map <svg class="icon">
+                                <use href="/imgs/icons.svg#map_marker"></use>
+                            </svg></a>
+                    </div>
+
+                    <div class="card bg-blue-dark white">
+                        <h4>East Bay Specialist Centre</h4>
+                        <address class="pb-2">
+
+                            Pheonix House<br />
+                            Pyne St<br />
+                            Whakatane 3120<br /><br />
+                            <h6>Phone:</h6>
+                            <a href="tel:+647303072029" class="white">+64 (730) 307 2029</a><br />
+                            <h6>Fax:</h6>
+                            +64 (730) 308 9720<br />
+                        </address>
+                        <a @click="open=2" class="btn">Map
+                            <svg class="icon">
+                                <use href="/imgs/icons.svg#map_marker"></use>
+                            </svg></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div x-show="open==1" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+        <div class="map_wrapper">
+            <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
+                    <use href="/imgs/icons.svg#cross"></use>
+                </svg></button>
+
+            <div class="map">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18
+                &q=SKIN+Dermatology+Institute+752+Cameron+Road,+Tauranga+South,+Tauranga+3112">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div x-show="open==2" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+        <div class="map_wrapper">
+            <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
+                    <use href="/imgs/icons.svg#cross"></use>
+                </svg></button>
+
+            <div class="map">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18
+                &q=east+bay+specialist+centre">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="align-center copyright small p-2"> &copy; 2024 Dr Barnaby Smith. All
+    rights reserved.</div></body>
+
+</html>

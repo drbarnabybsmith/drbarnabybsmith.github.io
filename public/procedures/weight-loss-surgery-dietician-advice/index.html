@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', '');
+    </script>
+
+    <title> | Dr Barnaby Smith</title>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand">
+    <meta name="keywords" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty">
+
+    
+    <meta property="og:url" content="http://localhost:1313/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr Barnaby Smith" />
+    <meta property="og:description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand" />
+    <meta property="og:image" content="http://localhost:1313//imgs/social-a-16x9.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="http://localhost:1313/" />
+    <meta name="twitter:title" content="Dr Barnaby Smith" />
+    <meta name="twitter:description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand" />
+    <meta name="twitter:image" content="http://localhost:1313//imgs/social-a-16x9.png" />
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/styles.css" media="screen">
+    
+
+    <link rel="icon" type="image/png" href="http://localhost:1313/imgs/favicon-32x32.png"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:1313/imgs/favicon-16x16.png"
+        sizes="16x16">
+
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <script src="/js/scripts.js"></script>
+</head>
+
+<body><header id="page-header" class="right animated fadeIn page-at-top"
+    :class="$store.menuTrigger.checked ? 'menu-checked' : ''" x-data="">
+
+    <div>
+        
+        <div id="logo" class="animated fadeIn">
+            <a href="/" @click="$store.menuTrigger.setOff()"><img src="/imgs/logo.png" alt="Dr Barnaby Smith" /></a>
+        </div>
+
+        <div id="main-menu" class="animated fadeIn">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/contact" class="btn">Contact
+                            <svg class="icon">
+                                <use href="/imgs/icons.svg#bubbles"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/#procedures">Procedures</a>
+                    </li>
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/procedures/weight-loss-surgery">Weight Loss Surgery</a>
+                    </li>
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/patient-registration-form">Registration</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </nav>
+
+            
+            <nav role="navigation" class="phone-menu">
+                <div id="menuToggle">
+                    <input type="checkbox" id="menu-trigger" x-model="$store.menuTrigger.checked" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu" :class="$store.menuTrigger.checked ? 'fadeIn' : 'fadeOut'">
+                        <li class="animated" :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a href="/contact" class="btn white">Contact
+                                <svg class="icon">
+                                    <use href="/imgs/icons.svg#bubbles"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/#procedures"
+                                @click="$store.menuTrigger.checked=false">Procedures</a>
+                        </li>
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/procedures/weight-loss-surgery"
+                                @click="$store.menuTrigger.checked=false">Weight Loss Surgery</a>
+                        </li>
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/patient-registration-form"
+                                @click="$store.menuTrigger.checked=false">Registration</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header><div id="animated fadeIn faster">
+
+<section class="content bg-grey-gradient animated fadeIn faster pt-8">
+    <div class="content">
+        <div class="container pb-0">
+            <h1>Bariatric (Weight Loss) Surgery</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+
+            <div class="grid two procedure" style="--columns: 250px 1fr">
+                <div>
+
+                    <div class="card bg-grey-dark white">
+                        <ul class="grid one gap1 middle no-style procedure-menu mb-0">
+                            <li>
+                                <a href="/procedures/weight-loss-surgery" >How
+                                    it
+                                    works
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gastric-sleeve" >Gastric Sleeve
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-choosing-op" >Choosing op
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-omega-loop" >Omega Loop
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-patient-journey" >Patient journey
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-preparing-for-surgery" >Preparing for
+                                    surgery
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-optifast-diet-instructions" >Optifast diet instructions
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-operative" >Post operative
+                                    Vitamin and Element replacement
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-gastric" >Post Gastric
+                                    Bypass fluids and discharge plan
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-sleeve" >Post
+                                    Sleeve gastrectomy fluids and discharge plan
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-dietician-advice" class="selected" >
+                                    Dietician Advice
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-after-recovery" >After recovery
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-operative-bloods" >
+                                    Post operative bloods
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gp-info" >GP info
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-cost" >Cost
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gastric-bypass" >Roux en Y Gastric Bypass
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-clinical-nurse-specialist" >Clinical Nurse Specialist
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Tabs -->
+                <div>
+                    <div class="card bg-white black">
+                        <h2>Dietician advice</h2>
+
+
+                        <h3>Before your Surgery</h3>
+
+                        <h4>What is Optifast?</h4>
+
+                        <p>Optifast is a meal replacement which is very low in calories and high in protein. It is
+                            available in shakes, soups, bars, and as a dessert.</p>
+
+                        <h4>Why do I need to take Optifast?</h4>
+                        <ul>
+                            <li>To reduce the size of your liver so that surgery is safer and easier.</li>
+                            <li>To improve your recovery after surgery.</li>
+                            <li>To kick start your weight loss.</li>
+                        </ul>
+
+                        <h4>How do I take Optifast?</h4>
+
+                        <p>You need to be on the Optifast diet for 2-3 weeks before your surgery as advised by your
+                            dietician</p>
+
+                        <h4>You should take:</h4>
+                        <ul>
+                            <li>Optifast products (as advised by dietician) per day.</li>
+                            <li>Two cups of low starch vegetables per day. (see examples on the next page)</li>
+                            <li>One serve of fruit per day (optional. See examples on the next page).</li>
+                            <li>At least two litres of calorie-free fluids per day (see examples on the next page).</li>
+                        </ul>
+
+                        <div class="bg-red white p-2 mb-2 border-radius">
+                            <h4>Warning</h4>
+                            If you eat foods that are not permitted, it may reduce the effect of Optifast and your liver
+                            may not shrink. This can make the surgery more difficult and may result in your operation
+                            being cancelled.
+                        </div>
+
+                        <h4>What do I do if I have Diabetes?</h4>
+                        <ul>
+                            <li>
+                                You should not need to make any changes to your diabetes management whilst you are on
+                                Optifast if:
+                                <ul class="mb-0">
+                                    <li>Your diabetes is diet controlled or</li>
+                                    <li>You take metformin</li>
+                                </ul>
+                            </li>
+                            <ul>
+                                <li>Please contact the Diabetes team, your GP or Diabetes specialist to discuss any
+                                    changes when using Optifast if:
+                                    <ul class="mb-0">
+                                        <li>You take any other medication such as gliclazide or insulin</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+
+                        <h4>Where can I buy Optifast?</h4>
+
+                        <p>Most pharmacies stock Optifast.</p>
+
+                        <h4>How will I feel while taking Optifast?</h4>
+
+                        <p>The first four days are the most difficult. Keep going - it will get easier! You may feel
+                            hungry, tired and emotional. Doing more exercise may help you to get through these first few
+                            days because it provides distraction and releases 'feel good' endorphins.</p>
+
+                        <p>Constipation can be a problem for some people. To help, make sure you are eating two cups of
+                            the allowed vegetables and drinking at least two litres of calorie-free fluid every day. You
+                            may find drinking alpine tea, adding Benefibre to liquids, or Phloe helps. These are all
+                            available in most supermarkets.</p>
+
+                        <h3>Additional foods allowed while on Optifast</h3>
+
+                        <div class="overflow-x-auto">
+                            <table class="mb-4">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Allowed</th>
+                                        <th>Avoid</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Vegetables
+                                            2 cups /day
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>alfalfa sprouts</li>
+                                                <li>asparagus</li>
+                                                <li>beans</li>
+                                                <li>beetroot</li>
+                                                <li>bok choy</li>
+                                                <li>broccoli</li>
+                                                <li>brussel sprouts</li>
+                                                <li>celery</li>
+                                                <li>cabbage</li>
+                                                <li>capsicum</li>
+                                                <li>cauliflower</li>
+                                                <li>carrot</li>
+                                                <li>courgette</li>
+                                                <li>cucumber</li>
+                                                <li>eggplant</li>
+                                                <li>kale</li>
+                                                <li>lettuce</li>
+                                                <li>leeks</li>
+                                                <li>mung beans</li>
+                                                <li>mushrooms</li>
+                                                <li>onions</li>
+                                                <li>radishes</li>
+                                                <li>shallots</li>
+                                                <li>silverbeet</li>
+                                                <li>snow peas</li>
+                                                <li>spinach</li>
+                                                <li>tomato</li>
+                                                <li>watercress /puh</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>avocado</li>
+                                                <li>corn</li>
+                                                <li>green banana</li>
+                                                <li>green peas</li>
+                                                <li>kumara</li>
+                                                <li>legumes e.g. baked beans /chickpeas</li>
+                                                <li>lentils</li>
+                                                <li>parsnip</li>
+                                                <li>potato</li>
+                                                <li>pumpkin</li>
+                                                <li>taro</li>
+                                                <li>yam</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fruit<br />
+                                            1 serve /day<br />
+                                            (Optional)</td>
+                                        <td>
+                                            <ul>
+                                                <li>1 small apple</li>
+                                                <li>2 apricots</li>
+                                                <li>¼ cup blueberries</li>
+                                                <li>½ cup canned fruit in juice- drained</li>
+                                                <li>10 cherries</li>
+                                                <li>1 kiwifruit</li>
+                                                <li>1 small orange / mandarin</li>
+                                                <li>I small nectarine</li>
+                                                <li>2 passion fruit</li>
+                                                <li>1 small peach</li>
+                                                <li>1 small pear</li>
+                                                <li>2 small slices pineapple</li>
+                                                <li>2 plums</li>
+                                                <li>3 prunes</li>
+                                                <li>1 cup cooked rhubarb</li>
+                                                <li>5-10 strawberries</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>All other fruit</li>
+                                                <li>NO BANANA</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herbs and Spices</td>
+                                        <td>
+                                            <ul>
+                                                <li>All</li>
+                                            </ul>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sauces and condiments</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lemon juice</li>
+                                                <li>Balsamic vinegar</li>
+                                                <li>Soy sauce</li>
+                                                <li>Chilli</li>
+                                                <li>Mustard</li>
+                                                <li>Tomato paste</li>
+                                                <li>2 tsp canola/olive oil</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>Mayonnaise (all types)</li>
+                                                <li>Butter/margarine</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Soups</td>
+                                        <td>
+                                            <ul>
+                                                <li>Stock cubes, miso soup, broth</li>
+                                                <li>Vegetable soups using allowed vegetables</li>
+                                                <li>Weight watchers zero point soup</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drinks</td>
+                                        <td>
+                                            <ul>
+                                                <li>Water</li>
+                                                <li>Herbal & fruit teas</li>
+                                                <li>Tea and coffee - no milk & no sugar</li>
+                                                <li>Diet / low calorie cordial diet soft drink</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                <li>Alcohol</li>
+                                                <li>Fruit juice</li>
+                                                <li>Milk</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other</td>
+                                        <td>
+                                            <ul>
+                                                <li>Unsweetened gum / lollies artificial sweetener</li>
+                                                <li>Diet jelly</li>
+                                                <li>Essence - banana, mint, orange, vanilla, strawberry</li>
+                                            </ul>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Eating after Weight Loss Surgery</h3>
+
+                        <h4>How it works</h4>
+                        <ul>
+                            <li>Weight loss surgery reduces the size of your stomach.</li>
+                            <li>This restricts the size of the portions you can eat.</li>
+                            <li>Your stomach size is smaller than it was.</li>
+                            <li>To begin with, there will be a lot of swelling and your stomach will only hold about 30
+                                ml.</li>
+                            <li>During the year, this will gradually increase to about 150-200 ml.</li>
+                        </ul>
+
+                        <h4>General recommendations:</h4>
+
+                        <ul>
+                            <li>Eat slowly and eat until you feel full.</li>
+                            <li>Chew your food well.</li>
+                            <li>Allow 20 - 30 minutes to eat each meal.</li>
+                            <li>Use a teaspoon, as this will help control the amount you eat.</li>
+                            <li>You may only be able to eat one to two teaspoons at each meal. This will increase slowly
+                                over</li>
+                            <li>the next few weeks.</li>
+                            <li>Avoid chewing gum, lollies and mints, even if they are sugar free.</li>
+                            <li>Flavour your food. You can use all types of herbs and spices.</li>
+                        </ul>
+
+                        <h4>Protein</h4>
+
+                        <p>
+                            Having enough protein is vital for your surgery wounds to heal properly. Protein will help
+                            preserve your muscle and encourage your fat stores to be used as energy.
+                        </p>
+
+                        <ul>
+                            <li>Include two protein shakes (Optifast) per day.</li>
+                            <li>Have one shake as a meal and one shake as part of your fluid.</li>
+                        </ul>
+
+                        <h4>Fluid</h4>
+
+                        <ul>
+                            <li>Drink at least 1,500ml of calorie-free fluid per day.</li>
+                            <li>Most of your fluid intake should be water.</li>
+                            <li>Stop drinking 30 minutes before and 30 minutes after meals.</li>
+                            <li>Sip your liquids, do not gulp as you may regurgitate or vomit.</li>
+                            <li>Avoid straws as this takes in air that may bloat your small stomach.</li>
+                            <li>Avoid fizzy drinks, they will make you feel bloated and can cause heartburn.</li>
+                        </ul>
+
+                        <h4>Constipation</h4>
+
+                        <ul>
+                            <li>Because you are eating less, constipation may be a problem. These strategies may help;
+                            </li>
+                            <li>Ensure you are drinking sufficient fluid.</li>
+                            <li>Regular physical activity.</li>
+                            <li>Alpine tea (Red Seal brand).</li>
+                            <li>Phloe</li>
+                            <li>Benefibre - this will only help if you are drinking at least 1,500 ml fluid.</li>
+                        </ul>
+
+                        <h4>Multivitamin</h4>
+
+                        <ul>
+                            <li>When you start eating you will need to start a multi-vitamin in the first month post
+                                surgery it should be a chewable multi-vitamin (either BN chewable multi or Nutri-chew,
+                                take 2 per
+                                day) Four weeks after your surgery you can either continue on the chewable multi-vitamin
+                                or change
+                                to the BN capsule (2/day) or Centrum Women's Multi-Vitamin (1/day)</li>
+                            <li>You will need to take a multivitamin daily for the rest of your life</li>
+                            <li>You will have your blood biochemistry checked routinely in the first year after surgery
+                                and then annually to monitor your nutritional status</li>
+                        </ul>
+
+                        <h3>Bariatric Dietary Progression</h3>
+                        <div class="overflow-x-auto">
+                            <table>
+                                <tr>
+                                    <td class="uppercase border-top">3-8 weeks before surgery</td>
+                                    <td class="border-top">
+                                        <ul>
+                                            <li>Optifast</li>
+                                            <li>Follow the Optifast diet for 2-8 weeks prior to the surgery as directed
+                                                by
+                                                your surgeon or dietitian</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center x-large">&darr;</td>
+                                </tr>
+                                <tr>
+                                    <td class="uppercase">Surgery</td>
+                                    <td>
+                                        Surgery
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center x-large">&darr;</td>
+                                </tr>
+                                <tr>
+                                    <td class="uppercase border-top">3 weeks after surgery</td>
+                                    <td class="border-top">
+                                        <ul>
+                                            <li>Puree Diet</li>
+                                            <li>Eat 3 meals per day</li>
+                                            <li>Include 2 protein shakes every day</li>
+                                            <li>You should be eating mostly protein</li>
+                                            <li>You will be eating about an egg size volume of food per meal</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center x-large">&darr;</td>
+                                </tr>
+                                <tr>
+                                    <td class="uppercase border-top">3-6 weeks after surgery</td>
+                                    <td class="border-top">
+                                        <ul>
+                                            <li>Soft Diet</li>
+                                            <li>Eat 3 meals per day</li>
+                                            <li>Include 2 protein shakes every day</li>
+                                            <li>Eat mostly protein</li>
+                                            <li>Start taking a daily multivitamin such as Centrum</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center x-large">&darr;</td>
+                                </tr>
+                                <tr>
+                                    <td class="uppercase border-top">6 weeks after surgery</td>
+                                    <td class="border-top">
+                                        <ul>
+                                            <li>Solid Diet</li>
+                                            <li>As you are able, slowly progress to solid food</li>
+                                            <li>Eat 3 meals per day</li>
+                                            <li>Include 2 protein shakes every day</li>
+                                            <li>At 6 months, most people can eat a portion equivalent to 2 eggs or 1/2 a
+                                                cup
+                                                at each meal</li>
+                                            <li>1 year and beyond most people can eat a portion equivalent to 3 eggs or
+                                                cup
+                                                of food at each meal</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="bg-blue white p-2 mb-2 border-radius">
+                            <h4>Recommendations</h4>
+
+                            <ul>
+                                <li>Stop eating as soon as you feel full</li>
+                                <li>During all stages make sure you are drinking enough fluid.</li>
+                                <li>You should be drinking at least 1.5l per day and more in hot weather; when you are
+                                    exercising or if you have diarrhea</li>
+                            </ul>
+                        </div>
+
+                        <h4>Puree Diet - Start 1 week after surgery</h4>
+
+                        <p>General recommendations:</p>
+                        <ul>
+                            <li>Eat three meals per day and don't have any snacks.</li>
+                            <li>Stop drinking 30 minutes before and after your meals.</li>
+                            <li>All food must be a smooth puree Use a blender or food processor to puree food to a thick
+                                soup consistency, with no lumps.</li>
+                            <li>Avoid all solid foods.</li>
+                            <li>Remember to drink at least 1,500ml of low-calorie fluids per day.</li>
+                        </ul>
+
+                        <p>The majority of your pureed food should be focused on protein:</p>
+
+                        <ul>
+                            <li>Meat, chicken, fish and seafood are the best sources of protein. Include meat, chicken,
+                                fish, seafood, eggs, lentils, legumes, tofu and low fat dairy products with every meal.
+                            </li>
+                            <li>Have two protein shakes per day.</li>
+                            <li>You can add protein powder to your meals to increase the protein content of your food.
+                            </li>
+                            <li>If you are vegetarian, you will need to add protein powder to your meals.</li>
+                        </ul>
+
+                        <h4>How to puree</h4>
+
+                        <ul>
+                            <li>Put chopped cooked meat, chicken or fish into a blender.</li>
+                            <li>Then slowly add liquid until it is pureed.</li>
+                        </ul>
+
+                        <p>Possible liquids to add:</p>
+
+                        <ul>
+                            <li>Soup (homemade, dried packet soup, canned soup, 'pouch' soup)</li>
+                            <li>Stock</li>
+                            <li>Water from vegetables</li>
+                            <li>Gravy (low-fat homemade gravy, Bisto, or a Weight Watchers packet)</li>
+                            <li>Natural juices from a stew or slow cooker meal</li>
+                            <li>Tomato pasta sauce</li>
+                            <li>Light 'Chicken Tonight' sauce</li>
+                            <li>Cottage Cheese</li>
+                            <li>Tofu</li>
+                        </ul>
+
+                        <p>Add flavour:</p>
+
+                        <ul>
+                            <li>Use flavoured liquids rather than water.</li>
+                            <li>Any seasoning / herbs/ spices/ garlic / onions/ balsamic vinegar / sweet chilli sauce.
+                            </li>
+                        </ul>
+
+                        <h4>Commercial Pre-prepared Options:</h4>
+
+                        <ul>
+                            <li>The Pure Food Company provide a variety of ready to eat high protein pureed foods</li>
+                            <li>These can be purchased online and delivered directly to your home
+                                www.thepurefoodco.co.nz</li>
+                        </ul>
+
+                        <h3>What to eat</h3>
+
+                        <div class="overflow-x-auto">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Meal</th>
+                                        <th>Food Options</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Breakfast</td>
+                                        <td>
+                                            <ul>
+                                                <li>Porridge made with calci-trim milk (make according to directions,
+                                                    and
+                                                    add a bit more milk to make thinner).Weetbix with calci-trim milk
+                                                </li>
+                                                <li>Plain smooth unsweetened yoghurt</li>
+                                                <li>Egg - loosely scrambled</li>
+                                                <li>Egg - lightly poached</li>
+                                                <li>Optifast or Protein Shake*</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lunch</td>
+                                        <td>
+                                            <ul>
+                                                <li>Protein-based soup</li>
+                                                <li>Egg - loosely scrambled</li>
+                                                <li>Egg lightly poached</li>
+                                                <li>Tuna/salmon/egg/ ChopChop Chicken whizzed with cottage cheese or
+                                                    extra
+                                                    low fat cream cheese (</li>
+                                                <li>&lt;10g fat per 100g) until smooth pureed consistency </li>
+                                                <li>Dinner type meal as below </li>
+                                                <li>Optifast or Protein Shake* </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dinner</td>
+                                        <td>
+                                            <p>
+                                                Your meal should be mostly protein with a small amount of sauce to keep
+                                                it
+                                                quite moist. <strong>Puree all food before eating.</strong>
+                                            </p>
+                                            <ul>
+                                                <li>Mince (any) with Weight Watchers gravy or low fat bolognaise sauce
+                                                </li>
+                                                <li>Chicken with Light Chicken Tonight sauce</li>
+                                                <li>Casserole with any meat (crock pot meals are usually good)</li>
+                                                <li>Fish with low fat white sauce </li>
+                                                <li>Vegetarian protein alternative, pureed smooth with reduced fat
+                                                    sauce.
+                                                    Add unflavoured
+                                                    protein powder to vegetarian meals increase the protein content.
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Optifast or Protein Shake</td>
+                                        <td>
+                                            <ul>
+                                                <li>After bariatric surgery, you may use other protein shakes, instead
+                                                    of
+                                                    Optifast.</li>
+                                                <li>Look for a protein shake which is low in fat and carbohydrate and
+                                                    has at
+                                                    least 20g of protein per serve.</li>
+                                                <li>Have two Optifast or Protein Shakes per day</li>
+                                                <li>Include one Optifast or Protein shake as a meal, and the other as
+                                                    part
+                                                    of your fluids.</li>
+                                                <li>If you add fruit, add no more than an egg-sized amount of fruit per
+                                                    shake.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="bg-blue white p-2 mb-2 border-radius">
+                            <h4>Amount</h4>
+                            <p>To start with you will only be able to eat very small amounts.</p>
+                            <p>Gradually over the first few weeks your portion sizes will increase.</p>
+                            <p>It is normal to be able to eat as little as 1-2 teaspoons or as much as ¼ cup
+                                of food.</p>
+                            <p>You may be able to eat more of some foods and less of others.</p>
+                            <p>Stop eating as soon as you feel full.</p>
+                        </div>
+
+
+                        <h3>Soft Diet - Start 4 weeks after surgery</h3>
+
+                        <p>The soft diet is the transition between the puree diet and a solid diet. A soft diet includes
+                            foods that are easy to eat and can be mashed with a fork. You may also be able to manage
+                            some crispy foods, such as Cruskits. You should stay on a soft diet for two weeks before
+                            gradually introducing more solid foods. Everyone progresses at a different rate - you may
+                            need to stay on your puree or soft diet longer.</p>
+
+                        <h4>General recommendations:</h4>
+
+                        <ul>
+                            <li>Remember to stop drinking 30 minutes before and after your meals.</li>
+                            <li>Eat three meals per day and no snacks.</li>
+                            <li>Remember the majority of your intake should be focused on protein.</li>
+                            <li>You can add protein powder to your meals to increase the protein content of your food.
+                            </li>
+                            <li>A sauce such as tomato pasta sauce, salsa, hummus, cottage cheese, or ricotta may help
+                                you to manage meat more easily.</li>
+                            <li>Remember to drink at least 1,500ml of low-calorie fluids per day.</li>
+                        </ul>
+
+                        <h3>What to eat:</h3>
+
+                        <div class="overflow-x-auto">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Food Group</th>
+                                        <th>Suitable Foods</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Meat, chicken and Fish</td>
+                                        <td>
+                                            <ul>
+                                                <li>Tender chicken, fish and meat in bite-sized pieces or minced</li>
+                                                <li>Shaved ham, turkey or chicken</li>
+                                                <li>Tinned salmon, tuna in spring water</li>
+                                                <li>‘Chop Chop' chicken</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Milk and milk products</td>
+                                        <td>
+                                            <ul>
+                                                <li>Low fat milk, cottage/ricotta cheese</li>
+                                                <li>Low fat yoghurt (less than 2g fat per 100g)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vegetables</td>
+                                        <td>
+                                            <ul>
+                                                <li>Cooked vegetables - mashed, stir fries, grilled or boiled</li>
+                                                <li>Introduce salads slowly</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fruit</td>
+                                        <td>Soft fruits - peeled pears, apples, stone fruit, melon, berries</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fluids</td>
+                                        <td>
+                                            <ul>
+                                                <li>Most of the fluid you drink should be water.</li>
+                                                <li>Try to limit the number of cups of coffee you have per day.
+                                                    <ul class="mb-0">
+                                                        <li>You may have a maximum of 4 coffees per day (no more than 1
+                                                            milky café coffee), or 6 cups of tea</li>
+                                                    </ul>
+                                                </li>
+                                                <li>If you have milk in your tea or coffee, always use trim milk.
+                                                    <ul class="mb-0">
+                                                        <li>Trim milk contains more calcium and protein.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Multivitamin</h3>
+
+                        <ul>
+                            <li>Start taking a multivitamin every day.</li>
+                            <li>We recommend the Centrum Womens or Centrum Advance 50+ or Celebrate Bariatric
+                                Multivitamin.</li>
+                            <li>If you find this difficult to swallow try cutting it in half or having with a teaspoon
+                                of yoghurt.</li>
+                        </ul>
+
+                        <h3>Meal ideas</h3>
+
+                        <div class="overflow-x-auto">
+                            <table class="mb-4">
+                                <thead>
+                                    <tr>
+                                        <th>Meal</th>
+                                        <th>Food Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Breakfast</td>
+                                        <td>
+                                            <ul>
+                                                <li>Weetbix /porridge/cereal with calci-trim milk</li>
+                                                <li>Low fat yoghurt with a small amount of fruit</li>
+                                                <li>Eggs - scrambled or poached</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lunch</td>
+                                        <td>
+                                            <ul class="mb-0">
+                                                <li>Cruskits with;
+                                                    <ul>
+                                                        <li>tinned fish</li>
+                                                        <li>chop chop chicken</li>
+                                                        <li>smoked chicken</li>
+                                                        <li>shaved ham or lean thinly sliced deli meat</li>
+                                                        <li>You may also include some hummus / cottage cheese / tomato/
+                                                            cucumber
+                                                            or
+                                                            other soft vegetables.</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Thick meat-based soups (avoid cream based ones), for example</li>
+                                                <li>Left overs from dinner with small amounts of soft cooked vegetables
+                                                </li>
+                                                <li>Rice paper spring rolls filled with soft meat</li>
+                                                <li>Thinly sliced deli meat rolled and filled with mashed egg, hummus or
+                                                    cottage cheese</li>
+                                                <li>Sashimi (raw fish)</li>
+                                                <li>Baked beans</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Breakfast</td>
+                                        <td>
+                                            <p>
+                                                Aim to eat an egg-sized portion of protein and include soft vegetables
+                                                for
+                                                the remainder of the
+                                                meal.
+                                            </p>
+
+                                            <ul>
+                                                <li>Lean mince (any) with Weight Watchers gravy</li>
+                                                <li>Mince with bolognaise sauce/chilli con carne sauce/taco sauce (or
+                                                    similar)</li>
+                                                <li>Chicken with Light Chicken Tonight sauce Casserole with any tender
+                                                    meat
+                                                    or chicken and vegetables (crock pot meals are usually good)</li>
+                                                <li>Fish with low fat white sauce</li>
+                                                <li>Fish that flakes apart easily</li>
+                                                <li>Prawns</li>
+                                                <li>Scallops</li>
+                                                <li>Tofu</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Optifast or Protein Shake</td>
+                                        <td>
+                                            <p>
+                                                Try to have 1 protein shake per day as part of your fluid intake for the
+                                                next 3 weeks
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="bg-blue white p-2 mb-2 border-radius">
+                            <p>Over the next few months your portion sizes will gradually increase.</p>
+                            <p>It is normal to be able to eat as between 1-2 eggs size portions of food or up to about ½
+                                a cup per meal.</p>
+                            <p>You may be able to eat more of some foods and less of others.</p>
+                            <p>Use your stomach as a guide and eat until you feel full.</p>
+                            <p><strong>Stop eating as soon as you feel full.</strong></p>
+                        </div>
+
+                        <h2>Fluid - After surgery</h2>
+
+                        <h3>Why is fluid important?</h3>
+
+                        <p>After surgery you will be eating much less food, therefore you need to drink even more fluid
+                            to maintain your levels of hydration. The feeling of hunger and thirst are similar and
+                            sometimes you may think you are hungry, but you may in fact need a drink. Being even
+                            slightly dehydrated will also decrease your energy.</p>
+
+                        <h3>Drink Frequently</h3>
+
+                        <p>Take small, slow, frequent sips throughout the day. You won't be able to drink fluids
+                            quickly. Always have a drink bottle with you. Try and drink 500ml by lunch time, 500ml by
+                            dinner and 500ml by bedtime.</p>
+
+                        <p>Your aim after surgery is to drink at least 1.5L of calorie-free fluid per day. You may need
+                            even more on hot days, or if you are exercising.</p>
+
+                        <p>Some people mention that water doesn't taste right or it feels heavy in the stomach after
+                            their surgery. If this is the case try experimenting with different temperatures of water.
+                            Some people find that ice-cold, room temperature or hot water is better tolerated. Try
+                            flavouring water - see overleaf for low calorie fluid ideas.</p>
+
+                        <h4>Tea and Coffee</h4>
+
+                        <p>It's fine to drink tea and coffee after the surgery. Try to limit the number of coffees you
+                            have per day. You may have a maximum of 4 coffees per day of which only one is a milk-based
+                            café coffee, or 6 cups of tea per day. Always use trim milk - trim milk also contains more
+                            calcium and protein.</p>
+
+                        <h3>Fizzy Drinks</h3>
+
+                        <p>Drinking carbonated fluid after surgery isn't recommended. Sometimes people can't burp very
+                            well and having excess gas could put pressure on your area of surgery. This may cause
+                            heartburn and make you feel bloated. Over time, you should be able to manage carbonated
+                            beverages if you would like them. Sparkling water is the best choice.</p>
+
+                        <h3>Alcohol</h3>
+
+                        <p>Alcohol is not recommended in the first six months after surgery. It is high in energy and
+                            can increase appetite. Drinking alcohol can slow your weight loss and lead to weight regain.
+                        </p>
+
+                        <p>You will absorb alcohol more quickly after your surgery and reach a higher peak blood
+                            alcohol. A little alcohol will have a significant effect. Please be mindful of this, if you
+                            intend to drive.</p>
+
+                        <p>Tempt your taste buds! -Suitable fluid ideas</p>
+
+                        <ul>
+                            <li>Slices of ginger in hot water and then pour over ice.</li>
+                            <li>Add a stick of lemon grass in water for a few hours</li>
+                            <li>Hot or cold Herbal Tea - tea bags work just as well in cold water - keepfor a bit longer
+                                than normal</li>
+                            <li>Some cubes of honeydew melon and cucumber</li>
+                            <li>Water with a twist of lemon or lime</li>
+                            <li>Water with slices of cucumber</li>
+                            <li>Angostura bitters</li>
+                            <li>Water with a cube of fruit in it</li>
+                            <li>A drop of peppermint essence</li>
+                            <li>Water with mint (crush the leaves a little to release the flavour)</li>
+                            <li>A teaspoon of vegemite or marmite in hot water</li>
+                            <li>Miso soup</li>
+                            <li>Soup Stock</li>
+                            <li>Chicken Broth</li>
+                            <li>Vitalzing Water Drops Water Enhancer (Raspberry, Peach, Coconut and Lemon lime)</li>
+                            <li>Vita Quench (Lemon and Lime, Mixed Berry, Cranberry and Orange, Mandarin, Orange and
+                                Mango)</li>
+                            <li>Thriftee (Orange Mango, Raspberry, Lime, Pineapple Orange, Orange, Blackcurrant)</li>
+                            <li>Barker and Halls Low Calorie Cordial (Low Cal Lemon Barley, Low Cal Orange Barley)</li>
+                            <li>Bickfords Diet Lime Cordial</li>
+                            <li>Hansels Cocktail Quench (Mojito, Lemon Lime and Bitters, Cosmopolitan)</li>
+                            <li>H2Go Zero Water (Boysenberry, Lime, Summer Fruits)*</li>
+                            <li>Powerade Zero*</li>
+                            <li>Water with a teaspoon of protein powder (stay away from sugary protein powders)</li>
+                        </ul>
+
+                        <h2>Exercise Following Bariatric Surgery</h2>
+
+                        <h3>Whilst in Hospital</h3>
+
+                        <p>Walk around the ward frequently - at least once an hour when you are awake.</p>
+
+                        <h3>First four weeks after leaving Hospital</h3>
+
+                        <ul>
+                            <li>Start by exercising 10 minutes per day. If this feels okay, then increase to 15 minutes
+                                and continue to increase the duration until you are at your pre-surgery levels of
+                                exercise.</li>
+                            <li>Stop if you feel any discomfort.</li>
+                            <li>By four weeks after surgery you should be at your pre-surgery levels of fitness.</li>
+                            <li>There are some restrictions on the type of exercises you can do in these four weeks.
+                            </li>
+                            <li>Recommended exercises for the first four weeks after surgery include;</li>
+                            <li>Walking</li>
+                            <li>Exercycle</li>
+                            <li>Biking</li>
+                            <li>Cross-trainer machine</li>
+                            <li>You are able to start swimming or water walking after two weeks as long as your wounds
+                                are clean and dry.</li>
+                            <li>Not recommended exercises include:</li>
+                            <li>Avoid lifting weights more than 3kg.</li>
+                            <li>No abdominal strengthening exercises.</li>
+                            <li>Avoid high intensity exercise.</li>
+                        </ul>
+
+                        <p>Impact sports such as running, or weights are not recommended in the first four weeks.</p>
+
+                        <h3>Four weeks after leaving Hospital</h3>
+
+                        <p>After four weeks impact sports can be reintroduced at a light intensity.</p>
+
+                        <h3>Six weeks after leaving Hospital</h3>
+
+                        <ul>
+                            <li>By six weeks following surgery there is no restriction with exercise.</li>
+                            <li>Any and all kinds of exercise are great!</li>
+                            <li>Exercise following bariatric surgery can maximise the results of the surgery and in the
+                                long term, can help with weight maintenance.</li>
+                            <li>We recommend exercising 5-6 times per week, for at least 30 minutes per session. If this
+                                is not realistic for you, please discuss this with the team to set realistic goals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    </div><footer class="grid layout" x-data="{ open: 0 }">
+    <div class="item-center container">
+
+        <div class="grid three" style="--columns: 1fr 1fr 2fr">
+            <div id="contact-us">
+                <h5 class="underline">Pages</h5>
+                <nav>
+                    <ul>
+                        
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/#procedures">Procedures</a>
+                        </li>
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/procedures/weight-loss-surgery">Weight Loss Surgery</a>
+                        </li>
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/patient-registration-form">Registration</a>
+                        </li>
+                        
+                        
+                        <li>&nbsp;</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h5 id="contact" class="underline">Contact</h5>
+                
+                
+
+                <div class="mb-4">
+                    <div>
+                        <h6>Hours:</h6>
+                        <p>6.00 am - 6.00 pm Weekdays</p>
+
+                        <h6>Phone:</h6>
+                        <p>
+                            <a href="tel:+6421988961" class="blue-dark">+64 (0) 21 988 961</a>
+                        </p>
+                        <a href="/contact" class="btn">Ask a question <svg class="icon">
+                                <use href="/imgs/icons.svg#bubbles"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>Clinics </h5>
+                <div class="grid two" style="--columns: 1fr 1fr">
+
+                    <div class="card bg-blue-dark white">
+                        <h4>Tauranga Specialist Centre</h4>
+                        <address class="pb-2">
+
+                            752 Cameron Rd<br />
+                            Tauranga 3110<br /><br />
+                            <h6>Phone:</h6>
+                            <a href="tel:+647545715548" class="white">+64 (754) 571 5548</a><br />
+                            <h6>Fax:</h6>
+                            +64 (754) 754 5549<br /><br />
+
+                        </address>
+                        <a @click="open=1" class="btn">Map <svg class="icon">
+                                <use href="/imgs/icons.svg#map_marker"></use>
+                            </svg></a>
+                    </div>
+
+                    <div class="card bg-blue-dark white">
+                        <h4>East Bay Specialist Centre</h4>
+                        <address class="pb-2">
+
+                            Pheonix House<br />
+                            Pyne St<br />
+                            Whakatane 3120<br /><br />
+                            <h6>Phone:</h6>
+                            <a href="tel:+647303072029" class="white">+64 (730) 307 2029</a><br />
+                            <h6>Fax:</h6>
+                            +64 (730) 308 9720<br />
+                        </address>
+                        <a @click="open=2" class="btn">Map
+                            <svg class="icon">
+                                <use href="/imgs/icons.svg#map_marker"></use>
+                            </svg></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div x-show="open==1" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+        <div class="map_wrapper">
+            <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
+                    <use href="/imgs/icons.svg#cross"></use>
+                </svg></button>
+
+            <div class="map">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18
+                &q=SKIN+Dermatology+Institute+752+Cameron+Road,+Tauranga+South,+Tauranga+3112">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div x-show="open==2" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+        <div class="map_wrapper">
+            <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
+                    <use href="/imgs/icons.svg#cross"></use>
+                </svg></button>
+
+            <div class="map">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18
+                &q=east+bay+specialist+centre">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="align-center copyright small p-2"> &copy; 2024 Dr Barnaby Smith. All
+    rights reserved.</div></body>
+
+</html>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Open+Sans&family=Plus+Jakarta+Sans&display=swap');
+$font-title: 'Plus Jakarta Sans', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+$font-logo: 'Plus Jakarta Sans', sans-serif;
+
+$black: #2A2627;
+$white: #fff;
+$white-off: #FCF7F8;
+
+$grey-1: #f4f4f4;
+$grey-2: #e1dad8;
+$grey-3: #8f8389;
+$grey-4: #343b43;
+$grey-5: #2D3142;
+
+$yellow: #f0c808;
+$orange: #FFA400;
+$orange-dark: #db8504;
+$red: #dd1c1a;
+$red-dark: #832232;
+$pink: #f97068;
+$purple: #966B9D;
+$blue-darker: #00344E;
+$blue-dark: #1c1f33;
+$blue: #0075a2;
+$aqua: #8CFBDE;
+$mint: #a9dbcb;
+$green: #037171;
+$green-dark: #218380;
+$beige: #c59b76;
+$brown: #4F270D;
+
+// Link states
+$link: $blue;
+$hover: $blue-dark;
+
+$link-light: $blue;
+$link-light-hover: $blue-dark;
+
+$button-primary: $link;
+$button-primary-hover: $hover;
+
+// header
+$page-header-bg: $white;
+$page-header-color: $black;
+$page-header-link-color: $white;
+$page-header-link-hover-color: $blue;
+$page-header-btn-link-color: $blue;
+$page-header-btn-link-hover-color: $blue-dark;
+
+// page colours
+$body-bg: $white;
+$body-color: $black;
+$bg-page-section: $black;
+$hero-bg: $grey-1;
+$hero-color: $blue-dark;
+
+// blocks
+$block-bg: $white;
+$block-color: $grey-5;
+
+$block-alt-bg: $blue-dark;
+$block-alt-color: $white;
+
+// footer
+$page-footer-bg: $white-off;
+$page-footer-color: $blue-dark;
+$page-footer-link-color: $blue;
+$page-footer-link-hover-color: $blue-dark;
+
+$page-footer-banner: $white-off;
+$page-footer-banner-color: $blue-dark;

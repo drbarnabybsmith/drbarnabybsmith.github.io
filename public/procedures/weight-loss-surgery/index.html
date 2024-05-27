@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', '');
+    </script>
+
+    <title> | Dr Barnaby Smith</title>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand">
+    <meta name="keywords" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty">
+
+    
+    <meta property="og:url" content="http://localhost:1313/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr Barnaby Smith" />
+    <meta property="og:description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand" />
+    <meta property="og:image" content="http://localhost:1313//imgs/social-a-16x9.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="http://localhost:1313/" />
+    <meta name="twitter:title" content="Dr Barnaby Smith" />
+    <meta name="twitter:description" content="Barnaby Smith: General, Bariatric and Endoscopic Surgeon for the Bay of Plenty, New Zealand" />
+    <meta name="twitter:image" content="http://localhost:1313//imgs/social-a-16x9.png" />
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/styles.css" media="screen">
+    
+
+    <link rel="icon" type="image/png" href="http://localhost:1313/imgs/favicon-32x32.png"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="http://localhost:1313/imgs/favicon-16x16.png"
+        sizes="16x16">
+
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <script src="/js/scripts.js"></script>
+</head>
+
+<body><header id="page-header" class="right animated fadeIn page-at-top"
+    :class="$store.menuTrigger.checked ? 'menu-checked' : ''" x-data="">
+
+    <div>
+        
+        <div id="logo" class="animated fadeIn">
+            <a href="/" @click="$store.menuTrigger.setOff()"><img src="/imgs/logo.png" alt="Dr Barnaby Smith" /></a>
+        </div>
+
+        <div id="main-menu" class="animated fadeIn">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/contact" class="btn">Contact
+                            <svg class="icon">
+                                <use href="/imgs/icons.svg#bubbles"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/#procedures">Procedures</a>
+                    </li>
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/procedures/weight-loss-surgery">Weight Loss Surgery</a>
+                    </li>
+                    
+                    <li class="navigation-item">
+                        <a class="navigation-link " href="http://localhost:1313/patient-registration-form">Registration</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </nav>
+
+            
+            <nav role="navigation" class="phone-menu">
+                <div id="menuToggle">
+                    <input type="checkbox" id="menu-trigger" x-model="$store.menuTrigger.checked" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu" :class="$store.menuTrigger.checked ? 'fadeIn' : 'fadeOut'">
+                        <li class="animated" :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a href="/contact" class="btn white">Contact
+                                <svg class="icon">
+                                    <use href="/imgs/icons.svg#bubbles"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/#procedures"
+                                @click="$store.menuTrigger.checked=false">Procedures</a>
+                        </li>
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/procedures/weight-loss-surgery"
+                                @click="$store.menuTrigger.checked=false">Weight Loss Surgery</a>
+                        </li>
+                        
+                        <li class="navigation-item animated"
+                            :class="$store.menuTrigger.checked ? 'fadeInLeft' : 'fadeOut'">
+                            <a class="navigation-link" href="http://localhost:1313/patient-registration-form"
+                                @click="$store.menuTrigger.checked=false">Registration</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header><div id="animated fadeIn faster">
+
+<section class="content bg-grey-gradient animated fadeIn faster pt-8">
+    <div class="content">
+        <div class="container pb-0">
+            <h1>Bariatric (Weight Loss) Surgery</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+
+            <div class="grid two procedure" style="--columns: 250px 1fr">
+                <div>
+
+                    <div class="card bg-grey-dark white">
+                        <ul class="grid one gap1 middle no-style procedure-menu mb-0">
+                            <li>
+                                <a href="/procedures/weight-loss-surgery" class="selected" >How
+                                    it
+                                    works
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gastric-sleeve" >Gastric Sleeve
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-choosing-op" >Choosing op
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-omega-loop" >Omega Loop
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-patient-journey" >Patient journey
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-preparing-for-surgery" >Preparing for
+                                    surgery
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-optifast-diet-instructions" >Optifast diet instructions
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-operative" >Post operative
+                                    Vitamin and Element replacement
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-gastric" >Post Gastric
+                                    Bypass fluids and discharge plan
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-sleeve" >Post
+                                    Sleeve gastrectomy fluids and discharge plan
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-dietician-advice" >
+                                    Dietician Advice
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-after-recovery" >After recovery
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-post-operative-bloods" >
+                                    Post operative bloods
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gp-info" >GP info
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-cost" >Cost
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-gastric-bypass" >Roux en Y Gastric Bypass
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/procedures/weight-loss-surgery-clinical-nurse-specialist" >Clinical Nurse Specialist
+                                    <svg class="icon">
+                                        <use href="/imgs/icons.svg#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Tabs -->
+                <div class="card bg-white black">
+                    <h2>How does weight loss surgery work?</h2>
+
+                    <p>The Gastrointestinal tract (gut) is a complex system of hormones, enzymes and feedback-systems
+                        that
+                        control
+                        the absorption of food, the bodies response to and desire for more food (Satiety). Surgery
+                        alters
+                        the
+                        gut to
+                        achieve both weight loss and better metabolic control of the absorbed calories/glucose. This is
+                        achieved
+                        by
+                        RESTRICTIVE, MALABSORPTIVE (or a COMBINATION OF RESTRICTIVE/MALABSORPTIVE) types of surgery.</p>
+
+                    <p>Most absorption of food (Calories, elements and vitamins) occurs in the small bowel. The large
+                        bowel
+                        is
+                        almost mostly solely for fluid absorption. Various parts of the small bowel are more designed to
+                        absorb
+                        different parts of your diet (i.e. Calcium in Duodenum, vitamin K in Terminal ileum) and secrete
+                        a
+                        number of
+                        hormones to control digestion and feed-back to the brain.</p>
+
+                    <h3>Restrictive</h3>
+                    <p>The Stomach is a reservoir that can hold over 1000ml, this enables us to comfortably have large
+                        meals
+                        (i.e.
+                        three square meals a day). Weight loss surgery creates a smaller gastric 'pouch' or 'sleeve'.
+                        This
+                        is
+                        typically 50-100ml in volume and significantly decreases the volume one can consume at once.
+                        When
+                        this
+                        new
+                        stomach is filled up at low volumes, it signals through nerves and hormones to the brain to stop
+                        eating
+                        and
+                        the body and brain feel satisfied and “full”. Patients do not desire to eat more (Satiety) due
+                        to
+                        the
+                        brains
+                        response to Ghrelin. Ghrelin is known as the “hunger hormone”.</p>
+
+                    <h3>Malabsorptive</h3>
+                    <p>Weight loss surgery re-arranges the internal plumbing of the small bowel to delay the
+                        mixing of
+                        eaten
+                        food
+                        with the bile and enzymes required for its digestion. This delay in mixing means that
+                        there is
+                        less
+                        time
+                        in
+                        the small bowel for this digestion to occur and less calories absorbed. Typically this
+                        mixing is
+                        delayed
+                        by
+                        100-150cm (the typical small bowel length ranges from 300cm - 600cm).
+                    </p>
+
+                    <h3>Metabolic and other changes</h3>
+                    <p>Weight loss surgery causes alteration in various hormones that result in the body
+                        behaving
+                        differently to
+                        ingested food/calories. This is not completely understood, but the most commonly
+                        described
+                        immediate
+                        change
+                        is the loss of peripheral insulin resistance seen in type 2 Diabetics. Within days of
+                        surgery a
+                        large
+                        number
+                        of Diabetic patients have better control of their blood sugar levels as a result of the
+                        body
+                        responding
+                        to
+                        insulin more effectively and lowering blood sugar levels. Other metabolic benefits seen
+                        are
+                        improved
+                        blood
+                        pressure and lipid profile through complex feed-back loops.</p>
+
+                    <img src="/imgs/procedures/weight_loss_surgery_1.png" alt="" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    </div><footer class="grid layout" x-data="{ open: 0 }">
+    <div class="item-center container">
+
+        <div class="grid three" style="--columns: 1fr 1fr 2fr">
+            <div id="contact-us">
+                <h5 class="underline">Pages</h5>
+                <nav>
+                    <ul>
+                        
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/#procedures">Procedures</a>
+                        </li>
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/procedures/weight-loss-surgery">Weight Loss Surgery</a>
+                        </li>
+                        
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="http://localhost:1313/patient-registration-form">Registration</a>
+                        </li>
+                        
+                        
+                        <li>&nbsp;</li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h5 id="contact" class="underline">Contact</h5>
+                
+                
+
+                <div class="mb-4">
+                    <div>
+                        <h6>Hours:</h6>
+                        <p>6.00 am - 6.00 pm Weekdays</p>
+
+                        <h6>Phone:</h6>
+                        <p>
+                            <a href="tel:+6421988961" class="blue-dark">+64 (0) 21 988 961</a>
+                        </p>
+                        <a href="/contact" class="btn">Ask a question <svg class="icon">
+                                <use href="/imgs/icons.svg#bubbles"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h5>Clinics </h5>
+                <div class="grid two" style="--columns: 1fr 1fr">
+
+                    <div class="card bg-blue-dark white">
+                        <h4>Tauranga Specialist Centre</h4>
+                        <address class="pb-2">
+
+                            752 Cameron Rd<br />
+                            Tauranga 3110<br /><br />
+                            <h6>Phone:</h6>
+                            <a href="tel:+647545715548" class="white">+64 (754) 571 5548</a><br />
+                            <h6>Fax:</h6>
+                            +64 (754) 754 5549<br /><br />
+
+                        </address>
+                        <a @click="open=1" class="btn">Map <svg class="icon">
+                                <use href="/imgs/icons.svg#map_marker"></use>
+                            </svg></a>
+                    </div>
+
+                    <div class="card bg-blue-dark white">
+                        <h4>East Bay Specialist Centre</h4>
+                        <address class="pb-2">
+
+                            Pheonix House<br />
+                            Pyne St<br />
+                            Whakatane 3120<br /><br />
+                            <h6>Phone:</h6>
+                            <a href="tel:+647303072029" class="white">+64 (730) 307 2029</a><br />
+                            <h6>Fax:</h6>
+                            +64 (730) 308 9720<br />
+                        </address>
+                        <a @click="open=2" class="btn">Map
+                            <svg class="icon">
+                                <use href="/imgs/icons.svg#map_marker"></use>
+                            </svg></a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div x-show="open==1" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+        <div class="map_wrapper">
+            <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
+                    <use href="/imgs/icons.svg#cross"></use>
+                </svg></button>
+
+            <div class="map">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18
+                &q=SKIN+Dermatology+Institute+752+Cameron+Road,+Tauranga+South,+Tauranga+3112">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div x-show="open==2" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+        <div class="map_wrapper">
+            <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
+                    <use href="/imgs/icons.svg#cross"></use>
+                </svg></button>
+
+            <div class="map">
+                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18
+                &q=east+bay+specialist+centre">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="align-center copyright small p-2"> &copy; 2024 Dr Barnaby Smith. All
+    rights reserved.</div></body>
+
+</html>

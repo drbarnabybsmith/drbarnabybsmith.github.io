@@ -2057,6 +2057,8 @@ html body > footer {
     color: #2A7F62; }
     html body > footer a:hover {
       color: #293241; }
+  html body > footer .card.bg-blue-dark address a:hover {
+    color: #fff; }
   html body > footer > div.container > div {
     max-width: 1200px;
     margin: 0 auto; }

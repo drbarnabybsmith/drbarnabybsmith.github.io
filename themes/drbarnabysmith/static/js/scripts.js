@@ -13,7 +13,7 @@ imgBg.onload = function() {
         document.getElementById('hero-bg').classList.remove("hidden");
     }
 }
-imgBg.src = "/imgs/hero.jpg";
+imgBg.src = "/imgs/hero.png";
 
 /* Mobile menu */
 document.addEventListener('alpine:init', () => {

@@ -4,7 +4,7 @@
 <footer class="grid layout" x-data="{ open: 0 }">
     <div class="item-center container">
 
-        <div class="grid three" style="--columns: 1fr 1fr 2fr">
+        <div class="footer-grid">
             <div id="contact-us">
                 <h5 class="underline">Pages</h5>
                 <nav>
@@ -58,18 +58,18 @@
             </div>
             <div>
                 <h5>Clinics <!-- <a href="/clinics" class="float-right small pt-1">See all</a> --></h5>
-                <div class="grid two" style="--columns: 1fr 1fr">
+                <div class="clinic-span grid two" style="--columns: 1fr 1fr">
 
                     <div class="card bg-blue-dark white">
-                        <h4>Tauranga Specialist Centre</h4>
+                        <h4 class="border-bottom-white">Tauranga Specialist Centre</h4>
                         <address class="pb-2">
 
-                            752 Cameron Rd<br />
+                            752 Cameron Rd,<br />
                             Tauranga 3110<br /><br />
                             <h6>Phone:</h6>
                             <a href="tel:+647545715548" class="white">+64 (754) 571 5548</a><br />
                             <h6>Fax:</h6>
-                            +64 (754) 754 5549<br /><br />
+                            +64 (754) 754 5549<br />
 
                         </address>
                         <a @click="open=1" class="btn">Map <svg class="icon">
@@ -78,10 +78,10 @@
                     </div>
 
                     <div class="card bg-blue-dark white">
-                        <h4>East Bay Specialist Centre</h4>
+                        <h4 class="border-bottom-white">East Bay Specialist Centre</h4>
                         <address class="pb-2">
 
-                            Pheonix House<br />
+                            Pheonix House,
                             Pyne St<br />
                             Whakatane 3120<br /><br />
                             <h6>Phone:</h6>
@@ -103,7 +103,7 @@
         </div>
     </div>
     </div>
-    <div x-show="open==1" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+    <div x-show="open==1"  class="map_popup bg-white item-full animated fadeIn" @click="open=0">
         <div class="map_wrapper">
             <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
                     <use href="/imgs/icons.svg#cross"></use>
@@ -117,7 +117,7 @@
             </div>
         </div>
     </div>
-    <div x-show="open==2" x-collapse class="map_popup bg-white item-full animated fadeIn" @click="open=0">
+    <div x-show="open==2"  class="map_popup bg-white item-full animated fadeIn" @click="open=0">
         <div class="map_wrapper">
             <button class="bg-red close-button" @click="open=0">Close <svg class="icon">
                     <use href="/imgs/icons.svg#cross"></use>

@@ -54,18 +54,31 @@ h1 {
 
 h2 {
   font-size: 48px;
+
+  @include for-phone-only {
+    font-size: 32px;
+  }
 }
 
 h3 {
   font-size: 33px;
+  @include for-phone-only {
+      font-size: 28px;
+  }
 }
 
 h4 {
   font-size: 28px;
+  @include for-phone-only {
+      font-size: 22px;
+  }
 }
 
 h5 {
   font-size: 22px;
+  @include for-phone-only {
+    font-size: 16px;
+  }
 }
 
 h6 {
@@ -209,6 +222,13 @@ table {
       font-weight: bold;
       text-transform: uppercase;
       font-size: small;
+      
+      @include for-phone-only {
+        &:first-child {
+            width: 30%;
+            margin-right: 10px;
+        }
+      }
 
       @include for-tablet-portrait-up {
         font-size: 100%;
@@ -221,6 +241,13 @@ table {
       padding: 10px 10px 5px 0;
       vertical-align: top;
       font-size: small;
+
+      @include for-phone-only {
+        &:first-child {
+          width: 30%;
+          margin-right: 10px;
+        }
+      }
 
       @include for-tablet-portrait-up {
         font-size: 100%;

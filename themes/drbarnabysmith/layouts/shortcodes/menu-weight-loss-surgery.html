@@ -11,7 +11,15 @@
         </li>
         <li>
             <a href="/procedures/weight-loss-surgery-gastric-sleeve" {{ if eq (.Get 0) "gastric-sleeve"
-                }}class="selected" {{ end }}>Gastric Sleeve
+                }}class="selected" {{ end }}>Sleeve Gastrectomy
+                <svg class="icon">
+                    <use href="/imgs/icons.svg#arrow_right"></use>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="/procedures/weight-loss-surgery-gastric-bypass" {{ if eq (.Get 0) "gastric-bypass" }}class="selected" {{
+                end }}>Roux en Y Gastric Bypass
                 <svg class="icon">
                     <use href="/imgs/icons.svg#arrow_right"></use>
                 </svg>
@@ -25,14 +33,14 @@
                 </svg>
             </a>
         </li>
-        <li>
+        <!-- <li>
             <a href="/procedures/weight-loss-surgery-omega-loop" {{ if eq (.Get 0) "omega-loop" }}class="selected" {{
                 end }}>Omega Loop
                 <svg class="icon">
                     <use href="/imgs/icons.svg#arrow_right"></use>
                 </svg>
             </a>
-        </li>
+        </li> -->
         <li>
             <a href="/procedures/weight-loss-surgery-patient-journey" {{ if eq (.Get 0) "patient-journey"
                 }}class="selected" {{ end }}>Patient journey
@@ -76,7 +84,7 @@
                 </svg>
             </a>
         </li>
-        <li>
+        <!--  <li>
             <a href="/procedures/weight-loss-surgery-post-sleeve" {{ if eq (.Get 0) "post-sleeve" }}class="selected" {{
                 end }}>Post
                 Sleeve gastrectomy fluids and discharge plan
@@ -84,7 +92,7 @@
                     <use href="/imgs/icons.svg#arrow_right"></use>
                 </svg>
             </a>
-        </li>
+        </li>  -->
         <li>
             <a href="/procedures/weight-loss-surgery-dietician-advice" {{ if eq (.Get 0) "dietician-advice"
                 }}class="selected" {{ end }}>
@@ -127,16 +135,8 @@
             </a>
         </li>
         <li>
-            <a href="/procedures/weight-loss-surgery-gastric-bypass" {{ if eq (.Get 0) "gastric-bypass"
-                }}class="selected" {{ end }}>Roux en Y Gastric Bypass
-                <svg class="icon">
-                    <use href="/imgs/icons.svg#arrow_right"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
             <a href="/procedures/weight-loss-surgery-clinical-nurse-specialist" {{ if eq (.Get
-                0) "clinical-nurse-specialist" }}class="selected" {{ end }}>Clinical Nurse Specialist
+                0) "bariatric-nurse-specialist" }}class="selected" {{ end }}>Bariatric Nurse Specialist
                 <svg class="icon">
                     <use href="/imgs/icons.svg#arrow_right"></use>
                 </svg>

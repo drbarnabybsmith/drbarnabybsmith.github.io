@@ -28,7 +28,7 @@ paginate = 20
     info = "General, Bariatric and Endoscopic Surgeon"
 
     # analytics
-    google_analitycs_id = ''
+    google_analitycs_id = 'G-5D5WMNJ6S1'
     
 [taxonomies]
     category = "categories"

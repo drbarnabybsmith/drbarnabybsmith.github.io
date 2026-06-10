@@ -1,7 +1,13 @@
 baseURL = 'https://barnabysmithsurgical.co.nz'
-languageCode = 'en-us'
+locale = 'en-NZ'
 title = 'Dr Barnaby Smith'
 theme = "drbarnabysmith"
+enableRobotsTXT = true
+
+# Site content is authored as raw HTML files (owner-controlled, trusted).
+# Hugo v0.158+ blocks text/html content by default; re-allow it.
+[security]
+    allowContent = ['.*']
 
 paginate = 20
 

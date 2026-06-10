@@ -1,0 +1,66 @@
+{{- /* Structured data: Physician (with both clinic locations) + WebSite. https://schema.org/Physician */ -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Physician",
+      "@id": "{{ .Site.BaseURL }}#physician",
+      "name": "{{ .Site.Params.legal_title }}",
+      "url": "{{ .Site.BaseURL }}",
+      "image": "{{ "imgs/social-a-16x9.png" | absURL }}",
+      "description": "{{ .Site.Params.description }}",
+      "telephone": "+6421988961",
+      "medicalSpecialty": ["Gastroenterologic", "Surgical"],
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Bay of Plenty, New Zealand"
+      },
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bariatric (Weight Loss) Surgery" },
+        { "@type": "MedicalProcedure", "name": "Anti-Reflux Surgery" },
+        { "@type": "MedicalProcedure", "name": "Laparoscopic Hernia Repair" },
+        { "@type": "MedicalProcedure", "name": "Endoscopy" }
+      ],
+      "location": [
+        {
+          "@type": "MedicalClinic",
+          "name": "Tauranga Specialist Centre",
+          "telephone": "+6475715548",
+          "faxNumber": "+6477545549",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "752 Cameron Rd",
+            "addressLocality": "Tauranga",
+            "addressRegion": "Bay of Plenty",
+            "postalCode": "3110",
+            "addressCountry": "NZ"
+          }
+        },
+        {
+          "@type": "MedicalClinic",
+          "name": "East Bay Specialist Centre",
+          "telephone": "+6473072029",
+          "faxNumber": "+6473089720",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Phoenix House, Pyne St",
+            "addressLocality": "Whakatane",
+            "addressRegion": "Bay of Plenty",
+            "postalCode": "3120",
+            "addressCountry": "NZ"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ .Site.BaseURL }}#website",
+      "url": "{{ .Site.BaseURL }}",
+      "name": "{{ .Site.Title }}",
+      "description": "{{ .Site.Params.description }}",
+      "publisher": { "@id": "{{ .Site.BaseURL }}#physician" }
+    }
+  ]
+}
+</script>
